@@ -1,0 +1,13 @@
+.coverage
+*.pyc
+.python-version
+.cache/
+.tox/
+*.egg-info/
+build/
+dist/
+*~
+scripts/cert.json
+scripts/apikey.txt
+htmlcov/
+.pytest_cache/
