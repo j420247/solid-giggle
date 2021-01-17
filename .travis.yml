@@ -1,0 +1,13 @@
+language: python
+python:
+  - "2.7"
+  - "3.3"
+  - "3.5"
+  - "3.6"
+# command to install dependencies
+install: "pip install -r requirements.txt"
+before_script: 
+  - export PY_VERSION=`python -c 'import sys; print sys.version_info.major'`
+  - if [[ "$PY_VERSION" == '2' ]]; then ./lint.sh all; fi
+# command to run tests
+script: pytest
